@@ -27,6 +27,12 @@ app = (function () {
             ctx.lineTo(f.x,f.y);
             ctx.stroke();
         })
+        canvas.addEventListener("mousedown", function(event){
+                    alert('mousedown at '+event.clientX+','+event.clientY);  
+
+          }
+        );
+         
         ctx.closePath()
     }
 
