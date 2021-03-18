@@ -12,34 +12,31 @@
         <script src="js/app.js"></script>
     </head>
 
-    <body>
+    <body style="background-color:#B9C5BC;">
         <div class="container">
-            <h1 align="center">BLUEPRINTS</h1>
+            <h1>Blueprints</h1>
             <label for="autor">Author:</label>
             <br>
-            <input type="text" id="autor" placeholder="Autor">
+            <input type="text" id="autor" placeholder="Name">
             <button id="ingresar" onclick="app.run()">
-                Traer BluePrints
+                Traer planos
             </button>
-            <br><br>
             <br><br>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="table"><i id="nombre"></i> Blueprints</label>
+                    <label for="table"><i id="nombre"></i> <i>Blueprints</i></label>
+                    <div id = "botoncrear"></div>
                     <table style="width:100%" id="table" class="table">
                         <tr>
-                            <th>Nombre del bluePrint</th>
+                            <th>Nombre del plano</th>
                             <th>Numero de puntos</th>
                             <th>Abrir</th>
                         </tr>
                         <tbody id="cuerpo"></tbody>
                     </table>
-                    <label>Puntos totales del usuario: <b id="total"></b></label>
+                    <label><i>Total de puntos del usuario: </i><i id="total"></i></label>
                 </div>
-                <div class="col-xl-6">
-                    <label for="myCanvas">Blueprint actual: <b id="current"></b></label>
-                    <canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;">
-                    </canvas>
+                <div id="canvasContainer" class="col-xl-6">
                 </div>
             </div>
         </div>
